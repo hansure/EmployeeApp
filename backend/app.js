@@ -8,6 +8,7 @@ dotenv.config()
 // const database = require('./config/database')
 const url = process.env.atlas_url
 //connection link => mongodb+srv://hansurea:surafelmelese@employee.fifco.mongodb.net/Employee?retryWrites=true&w=majority
+console.log(typeof url)
 
 const app = express()
 app.use(

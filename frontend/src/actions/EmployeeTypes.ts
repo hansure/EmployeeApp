@@ -1,7 +1,7 @@
 export interface EmployeeTypes {
   id?: any
   name: string
-  birthDate: Date
+  birthDate: string
   gender: string
   salary: number
 }

@@ -12,7 +12,7 @@ import {
 } from './formStyle'
 type EmployeeEditState = {
   name: string
-  birthDate: Date
+  birthDate: string
   gender: string
   salary: number
 }
@@ -30,7 +30,7 @@ class EmployeeEdit extends React.Component<
     super(props)
     this.state = {
       name: '',
-      birthDate: new Date(),
+      birthDate: '',
       gender: '',
       salary: 0,
     }
@@ -86,7 +86,7 @@ class EmployeeEdit extends React.Component<
               required
               type='text'
               className='form-control'
-              value={this.state.name}
+              value={this.state.birthDate}
               onChange={(e: any) => {
                 this.setState({ birthDate: e.target.value })
               }}
@@ -116,7 +116,6 @@ class EmployeeEdit extends React.Component<
               }}
             />
           </div>
-
           <SubmitButton className='btn btn-primary'>Edit</SubmitButton>
         </FormContainer>
       </BoxContainer>

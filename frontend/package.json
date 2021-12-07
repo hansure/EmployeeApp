@@ -1,33 +1,4 @@
 {
-  "name": "addis_software",
-  "version": "1.0.0",
-  "description": "Addis Software test project",
-  "app": "app.js",
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hansure/addis_software.git"
-  },
-  "author": "Surafel Melese",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hansure/addis_software/issues"
-  },
-  "homepage": "https://github.com/hansure/addis_software#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongodb": "^4.1.2",
-    "mongoose": "^6.0.8",
-    "nodemon": "^2.0.13"
-  }
-}
-
-{
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
