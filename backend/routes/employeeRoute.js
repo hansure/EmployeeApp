@@ -18,6 +18,6 @@ router.post('/api/add-employee', employee_controller.employee_create)
 router.put('/api/edit-employee/:id', employee_controller.employee_update)
 
 //Get request to delete employee
-router.delete('/api/delete-employee/:id', employee_controller.employee_delete)
+router.delete('/api/edit-employee/:id', employee_controller.employee_delete)
 
 module.exports = router

@@ -65,10 +65,10 @@ class EmployeeEdit extends React.Component<
   render() {
     return (
       <BoxContainer>
-        <h3>Edit </h3>
+        <h3 style={{ color: 'blue', display: 'flex', justifyContent: 'center' }}>Edit </h3>
         <FormContainer onSubmit={this.onSubmit} className='form'>
           <div className='form-group'>
-            <label> Full Name </label>
+            <label style={{ color: 'blue' }}> Full Name </label>
             <Input
               required
               type='text'
@@ -81,7 +81,7 @@ class EmployeeEdit extends React.Component<
           </div>
 
           <div className='form-group'>
-            <label> Date of birth </label>
+            <label style={{ color: 'blue' }}> Date of birth </label>
             <Input
               required
               type='text'
@@ -93,7 +93,7 @@ class EmployeeEdit extends React.Component<
             />
           </div>
           <div className='form-group'>
-            <label> gender </label>
+            <label style={{ color: 'blue' }}> Gender </label>
             <Input
               required
               type='text'
@@ -105,7 +105,7 @@ class EmployeeEdit extends React.Component<
             />
           </div>
           <div className='form-group'>
-            <label> salary </label>
+            <label style={{ color: 'blue' }}> Salary </label>
             <Input
               required
               type='text'

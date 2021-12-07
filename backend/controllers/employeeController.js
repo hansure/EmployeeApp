@@ -27,7 +27,7 @@ exports.employee_create = function (req, res) {
       name: req.body.name,
       salary: req.body.salary,
       gender: req.body.gender,
-      birthdate: new Date(req.body.birthdate),
+      birthday: new Date(req.body.birthdate),
     },
     function (err, employee) {
       if (err) res.send(err)

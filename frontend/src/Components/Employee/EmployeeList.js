@@ -17,9 +17,12 @@ class EmployeeList extends React.Component {
     this.props.editMode()
     this.props.fetchEmployeeById(employeeId)
   }
-
+  refreshPage = () => {
+    window.location.reload(false)
+  }
   onDelete = (employeeId) => {
     this.props.deleteEmployee(employeeId)
+    this.refreshPage()
   }
 
   render() {
@@ -40,7 +43,7 @@ class EmployeeList extends React.Component {
             {this.props.Employees.map((emp) => (
               <tr key={emp.id}>
                 <td>{emp.name}</td>
-                <td>{emp.birthDate}</td>
+                <td>{emp.birthday}</td>
                 <td>{emp.gender}</td>
                 <td>{emp.salary}</td>
 

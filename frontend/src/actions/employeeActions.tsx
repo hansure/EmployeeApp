@@ -6,6 +6,8 @@ import {
   EDIT_MODE,
   FETCH_EMPLOYEE_BY_ID,
   ADD_EMPLOYEE_BUTTON_CLICKED,
+  DELETE_EMPLOYEE_ASYNC,
+  EDIT_EMPLOYEE_ASYNC,
 } from './actionTypes'
 import { EmployeeTypes} from './EmployeeTypes'
 
@@ -25,12 +27,12 @@ export const addEmployee = (employee: EmployeeTypes)=> ({
 })
 
 export const editEmployee = (employee: EmployeeTypes) => ({
-  type: EDIT_EMPLOYEE,
+  type: EDIT_EMPLOYEE_ASYNC,
   payload: employee,
 })
 
 export const deleteEmployee = (id:String) => ({
-  type: DELETE_EMPLOYEE,
+  type: DELETE_EMPLOYEE_ASYNC,
   payload: id,
 })
 

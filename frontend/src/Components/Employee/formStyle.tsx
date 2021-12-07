@@ -6,6 +6,7 @@ export const BoxContainer = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 8px;
+  justifycontent: center;
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
@@ -16,8 +17,9 @@ export const BoxContainer = styled.div`
 `
 
 export const FormContainer = styled.form`
-  width: 100%;
+  width: 80%;
   display: flex;
+  margin-left: 80px;
   flex-direction: column;
   box-shadow: 0px 0px 2.5px rgba(15, 15, 15, 0.19);
   @media screen and (max-width: 768px) {
@@ -55,7 +57,7 @@ export const Input = styled.input`
   font-size: 15px;
 
   &::placeholder {
-    color: rgba(0, 0, 200, 1);
+    color: rgba(20, 20, 200, 1);
   }
   &:not(:last-of-type) {
     border-bottom: 1.5px solid rgba(200, 200, 200, 0.4);

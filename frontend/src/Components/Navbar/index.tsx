@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
       <Container>
         <Logo>Addis Software Employee</Logo>
         <Menu>
-          <MenuItem>About</MenuItem>
+          <MenuItem><a>About</a></MenuItem>
           <MenuItem>Contact</MenuItem>
         </Menu>
       </Container>
